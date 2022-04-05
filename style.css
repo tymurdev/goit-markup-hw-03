@@ -1,0 +1,251 @@
+:root {
+  --bgc-main: #fff;
+  --bgc-second: #2f303a;
+  --bgc-third: #f5f4fa;
+  --color-main: #212121;
+  --color-second: #757575;
+  --color-third: #fff;
+  --color-add: #2196f3;
+  --color-logo: #000;
+  --color-footer: rgba(255, 255, 255, 0.6);
+  --elements-color-first: #2196f3;
+  --elements-color-second: #f5f4fa;
+  --elements-color-third: #eee;
+  --order-btn-add: #188ce8;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bgc-main);
+  color: var(--color-main);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ===LOGO=== */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-add);
+}
+.logo_header {
+  color: var(--color-logo);
+}
+.logo-footer {
+  color: var(--color-third);
+}
+
+/* ===HEADER=== */
+.header {
+}
+.header-nav {
+}
+.header-list {
+}
+.header-link,
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+}
+.header-contacts {
+  color: var(--color-second);
+}
+.header-link:focus,
+.header-link:hover,
+.header-contacts:focus,
+.header-contacts:hover {
+  color: var(--color-add);
+}
+.current {
+  color: var(--color-add);
+}
+
+/* ===FOOTER=== */
+.footer {
+  background-color: var(--bgc-second);
+}
+.footer-address {
+}
+.footer-link {
+}
+.footer-item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-item:focus,
+.footer-item:hover {
+  color: var(--color-add);
+}
+.map-address {
+  color: var(--color-third);
+}
+.footer-contacts {
+  color: var(--color-footer);
+}
+
+/* ===ORDER=== */
+.order {
+  background: var(--bgc-second);
+}
+.order-title {
+  color: var(--color-third);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.order-btn {
+  background-color: var(--elements-color-first);
+  color: var(--color-third);
+  font-weight: 700;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.order-btn:focus,
+.order-btn:hover {
+  background-color: var(--order-btn-add);
+}
+
+/* ===METHODS=== */
+.methods {
+}
+.methods-list {
+}
+.methods-box {
+}
+.methods-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.methods-txt {
+  color: var(--color-second);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ===OUR WORK=== */
+.work {
+}
+.work-title {
+}
+.work-list {
+}
+.work-item {
+}
+
+/* ===OUR TEAM=== */
+.team {
+  background-color: var(--bgc-third);
+}
+.team-title {
+}
+.team-list {
+}
+.team-box {
+  background-color: var(--bgc-main);
+}
+.team-img {
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-prof {
+  color: var(--color-second);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* ===PORTFOLIO=== */
+.filter {
+}
+.filter-menu {
+}
+.filter-btn {
+  background-color: var(--elements-color-second);
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--elements-color-first);
+  color: var(--color-third);
+}
+.portfolio {
+}
+.portfolio-list {
+}
+.portfolio-box {
+}
+.portfolio-img {
+}
+.portfolio-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portgolio-txt {
+  color: var(--color-second);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
