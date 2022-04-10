@@ -27,12 +27,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-}
+h6,
 ul {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .link {
@@ -77,6 +75,14 @@ ul {
   /* ---------------НЕ ЗАБУДЬ УБРАТЬ ЭТУ СТРОКУ */
   outline: 2px solid red;
 }
+
+.section {
+  padding: 94px 0;
+}
+
+.img {
+  display: block;
+}
 /* ===LOGO=== */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -105,6 +111,7 @@ ul {
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .header-logo {
   margin-right: 93px;
@@ -112,27 +119,17 @@ ul {
 
 .header-list {
   display: flex;
-  margin-right: 331px;
+  /* margin-right: 331px; */
 }
 .header-contacts-list {
   display: flex;
-  margin-left: auto;
-  align-items: center;
+  margin-left: 0 auto;
 }
 
-/* .header-contacts:first-child {
+.header-contacts:first-child {
   margin-right: 50px;
-} */
-
-.header-link,
-.header-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--color-main);
-  display: block;
 }
+
 .header-link:not(last-child) {
   margin-right: 50px;
 }
@@ -140,7 +137,14 @@ ul {
 .header-contacts {
   color: var(--color-second);
 }
-
+.header-link,
+.header-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-main);
+}
 .header-link:focus,
 .header-link:hover,
 .header-contacts:focus,
@@ -222,7 +226,7 @@ ul {
 
 /* ===METHODS=== */
 .methods {
-  margin: 94px 0;
+  margin-bottom: -94px;
 }
 .methods-list {
   display: flex;
@@ -248,7 +252,6 @@ ul {
 
 /* ===OUR WORK=== */
 .work {
-  padding-bottom: 94px;
 }
 .work-title {
   margin-bottom: 50px;
@@ -263,7 +266,6 @@ ul {
 /* ===OUR TEAM=== */
 .team {
   background-color: var(--bgc-third);
-  padding: 94px 0;
 }
 .team-title {
   margin-bottom: 50px;
@@ -318,7 +320,6 @@ ul {
   color: var(--color-third);
 }
 .portfolio {
-  margin-bottom: 94px;
 }
 .portfolio-list {
   display: flex;
@@ -326,7 +327,6 @@ ul {
 }
 .portfolio-box {
   max-width: 370px;
-  border: 1px solid var(--portfolio-box-border);
   text-align: left;
 }
 .portfolio-link {
@@ -339,6 +339,7 @@ ul {
 }
 
 .portfolio-img {
+  display: block;
 }
 .portfolio-name {
   font-weight: 700;
@@ -356,4 +357,7 @@ ul {
 }
 .portfolio-box-bottom-part {
   padding: 20px 24px;
+  border: 1px solid var(--portfolio-box-border);
+  border-top: 0;
+  box-sizing: border-box;
 }
