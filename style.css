@@ -45,6 +45,7 @@ ul {
   font-family: inherit;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -72,8 +73,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* ---------------НЕ ЗАБУДЬ УБРАТЬ ЭТУ СТРОКУ */
-  outline: 2px solid red;
 }
 
 .section {
@@ -133,9 +132,6 @@ ul {
   margin-right: 50px;
 }
 
-.header-contacts {
-  color: var(--color-second);
-}
 .header-link,
 .header-contacts {
   font-weight: 500;
@@ -144,6 +140,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--color-main);
 }
+
+.header-contacts {
+  color: var(--color-second);
+}
+
 .header-link:focus,
 .header-link:hover,
 .header-contacts:focus,
@@ -206,6 +207,7 @@ ul {
 }
 .order-btn {
   background-color: var(--elements-color-first);
+  border-color: var(--elements-color-first);
   color: var(--color-third);
   font-weight: 700;
   line-height: 1.88;
@@ -216,6 +218,9 @@ ul {
   margin: 0 auto;
   margin-top: 30px;
   max-width: max-content;
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: block;
 }
 
 .order-btn:focus,
@@ -278,6 +283,9 @@ ul {
 .team-box {
   background-color: var(--bgc-main);
   max-width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
 }
@@ -307,11 +315,14 @@ ul {
 }
 .filter-btn {
   background-color: var(--elements-color-second);
+  border-color: var(--elements-color-second);
   font-weight: 500;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   margin-right: 8px;
+  padding: 6px 22px;
+  display: block;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -327,6 +338,7 @@ ul {
 .portfolio-box {
   max-width: 370px;
   text-align: left;
+  box-sizing: border-box;
 }
 .portfolio-link {
 }
