@@ -323,6 +323,7 @@ ul {
   margin-right: 8px;
   padding: 6px 22px;
   display: block;
+  max-width: max-content;
 }
 .filter-btn:hover,
 .filter-btn:focus {
