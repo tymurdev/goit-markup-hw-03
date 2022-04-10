@@ -119,11 +119,10 @@ ul {
 
 .header-list {
   display: flex;
-  /* margin-right: 331px; */
 }
 .header-contacts-list {
   display: flex;
-  margin-left: 0 auto;
+  margin-left: auto;
 }
 
 .header-contacts:first-child {
@@ -304,7 +303,7 @@ ul {
 .filter-menu {
   display: flex;
   justify-content: center;
-  padding: 94px 0 34px 0;
+  padding-bottom: 34px;
 }
 .filter-btn {
   background-color: var(--elements-color-second);
