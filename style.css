@@ -74,7 +74,7 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* не забудь убрать эту строку */
+  /* ---------------НЕ ЗАБУДЬ УБРАТЬ ЭТУ СТРОКУ */
   outline: 2px solid red;
 }
 /* ===LOGO=== */
@@ -152,21 +152,21 @@ ul {
 /* ===FOOTER=== */
 .footer {
   background-color: var(--bgc-second);
-  padding-top: 60px;
+  padding: 60px 0;
 }
 
 .footer-address {
 }
-.footer-link {
-  margin-top: 20px;
-  padding-bottom: 60px;
+
+.footer-link:not(last-child) {
+  margin-bottom: 9px;
 }
+
 .footer-item {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 9px;
 }
 .footer-item:focus,
 .footer-item:hover {
@@ -321,8 +321,10 @@ ul {
 .portfolio-box {
   max-width: 370px;
   border: 1px solid var(--portfolio-box-border);
+  text-align: left;
 }
-
+.portfolio-link {
+}
 .portfolio-box:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
@@ -337,8 +339,9 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--color-main);
 }
-.portgolio-txt {
+.portfolio-txt {
   color: var(--color-second);
   font-weight: 400;
   font-size: 16px;
