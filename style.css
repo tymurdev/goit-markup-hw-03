@@ -98,7 +98,6 @@ ul {
 .header .container {
   display: flex;
   align-items: center;
-  margin: 32px 0;
 }
 
 .header-nav {
@@ -106,6 +105,7 @@ ul {
 }
 .header-logo {
   margin-right: 93px;
+  margin-left: -15px;
 }
 
 .header-list {
@@ -234,26 +234,40 @@ ul {
 
 /* ===OUR WORK=== */
 .work {
+  padding-bottom: 94px;
 }
 .work-title {
+  margin-bottom: 50px;
 }
 .work-list {
+  display: flex;
 }
-.work-item {
+.work-item:not(last-child) {
+  padding-right: 30px;
 }
 
 /* ===OUR TEAM=== */
 .team {
   background-color: var(--bgc-third);
+  padding: 94px 0;
 }
 .team-title {
+  margin-bottom: 50px;
 }
 .team-list {
+  display: flex;
+}
+.team-box:not(last-child) {
+  margin-right: 30px;
 }
 .team-box {
   background-color: var(--bgc-main);
+  max-width: 270px;
 }
 .team-img {
+}
+.team-box-down-part {
+  padding: 30px;
 }
 .team-name {
   font-weight: 500;
