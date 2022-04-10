@@ -149,6 +149,7 @@ ul {
 /* ===FOOTER=== */
 .footer {
   background-color: var(--bgc-second);
+  padding-top: 60px;
 }
 .footer .logo {
 }
@@ -165,7 +166,7 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-bottom: 90px;
+  margin-top: 9px;
 }
 .footer-item:focus,
 .footer-item:hover {
