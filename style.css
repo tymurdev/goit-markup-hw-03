@@ -19,6 +19,19 @@ body {
   background-color: var(--bgc-main);
   color: var(--color-main);
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 
 .link {
   text-decoration: none;
@@ -53,6 +66,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* не забудь убрать эту строку */
+  outline: 2px solid red;
+}
 /* ===LOGO=== */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -71,10 +93,28 @@ body {
 
 /* ===HEADER=== */
 .header {
+  border-bottom: 1px solid var(--border-header-color);
 }
+.header .container {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+}
+
 .header-nav {
+  display: flex;
 }
+.header-logo {
+  margin-right: 93px;
+}
+
 .header-list {
+  display: flex;
+  margin-right: 331px;
+}
+.header-contacts-list {
+  display: flex;
+  margin: auto;
 }
 .header-link,
 .header-contacts {
@@ -84,9 +124,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-main);
 }
+.header-link:not(last-child) {
+  margin-right: 50px;
+}
+
 .header-contacts {
   color: var(--color-second);
 }
+
+.header-contacts-list:first-child {
+  margin-right: 50px;
+}
+
 .header-link:focus,
 .header-link:hover,
 .header-contacts:focus,
@@ -125,6 +174,7 @@ body {
 /* ===ORDER=== */
 .order {
   background: var(--bgc-second);
+  padding: 200px 0;
 }
 .order-title {
   color: var(--color-third);
@@ -134,6 +184,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .order-btn {
   background-color: var(--elements-color-first);
@@ -144,6 +196,9 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: max-content;
 }
 
 .order-btn:focus,
@@ -153,10 +208,14 @@ body {
 
 /* ===METHODS=== */
 .methods {
+  margin: 94px 0;
 }
 .methods-list {
+  display: flex;
 }
-.methods-box {
+.methods-box:not(last-child) {
+  max-width: 270px;
+  margin-right: 30px;
 }
 .methods-title {
   font-weight: 700;
