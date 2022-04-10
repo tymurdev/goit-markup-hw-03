@@ -94,6 +94,7 @@ ul {
 /* ===HEADER=== */
 .header {
   border-bottom: 1px solid var(--border-header-color);
+  padding: 32px 0;
 }
 .header .container {
   display: flex;
@@ -105,7 +106,6 @@ ul {
 }
 .header-logo {
   margin-right: 93px;
-  margin-left: -15px;
 }
 
 .header-list {
@@ -150,15 +150,22 @@ ul {
 .footer {
   background-color: var(--bgc-second);
 }
+.footer .logo {
+}
+.footer .container {
+}
 .footer-address {
 }
 .footer-link {
+  margin-top: 20px;
+  padding-bottom: 60px;
 }
 .footer-item {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-bottom: 90px;
 }
 .footer-item:focus,
 .footer-item:hover {
