@@ -103,6 +103,7 @@ ul {
 
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .header-logo {
   margin-right: 93px;
@@ -151,10 +152,7 @@ ul {
   background-color: var(--bgc-second);
   padding-top: 60px;
 }
-.footer .logo {
-}
-.footer .container {
-}
+
 .footer-address {
 }
 .footer-link {
@@ -293,9 +291,10 @@ ul {
 }
 
 /* ===PORTFOLIO=== */
-.filter {
-}
 .filter-menu {
+  display: flex;
+  justify-content: center;
+  padding: 94px 0 34px 0;
 }
 .filter-btn {
   background-color: var(--elements-color-second);
@@ -303,6 +302,7 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-right: 8px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -310,10 +310,16 @@ ul {
   color: var(--color-third);
 }
 .portfolio {
+  margin-bottom: 94px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .portfolio-box {
+  margin-bottom: 30px;
+  margin-right: 30px;
+  max-width: 370px;
 }
 .portfolio-img {
 }
